@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Toggle</title>
+</head>
+<body>
+
+    <button onclick="toggleMenu()">Menu</button>
+
+    <div id="menu" style="display: none;">
+        <button style="width: 100px;">Menu 1</button><br>
+        <button style="width: 100px;">Menu 2</button><br>
+        <button style="width: 100px;">Menu 3</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            let menu = document.getElementById("menu");
+
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
