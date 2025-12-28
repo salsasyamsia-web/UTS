@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button onmouseover="fungsi1()" onmouseout="hapus1()">tombol1</button>
+  <button onmouseover="fungsi2()" onmouseout="hapus2()">tombol2</button>
+  <p id="hasil1"></p>
+  <p id="hasil2"></p>
+  <script>
+    function fungsi1() {
+      document.getElementById("hasil1").textContent = "Nama saya Arya";
+    }
+    function hapus1() {
+      document.getElementById("hasil1").textContent = "";
+    }
+    function fungsi2() {
+      document.getElementById("hasil2").textContent = "Saya tinggal dipasarwajo";
+    }
+    function hapus2() {
+      document.getElementById("hasil2").textContent = "";
+    }
+  </script>
+</body>
+</html>

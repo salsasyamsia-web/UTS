@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Cek Kelulusan</title>
+</head>
+<body>
+
+    <p>
+        Batas Kelulusan:
+        <input type="number" id="batas">
+    </p>
+
+    <h3>Cek Kelulusan</h3>
+
+    <p>
+        Nilai Ujian:
+        <input type="number" id="nilai">
+    </p>
+
+    <button onclick="cekKelulusan()">Cek</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function cekKelulusan() {
+            let batas = parseFloat(document.getElementById("batas").value) || 0;
+            let nilai = parseFloat(document.getElementById("nilai").value) || 0;
+
+            if (nilai >= batas) {
+                document.getElementById("hasil").textContent = "Lulus";
+            } else {
+                document.getElementById("hasil").textContent = "Tidak Lulus";
+            }
+        }
+    </script>
+
+</body>
+</html>
